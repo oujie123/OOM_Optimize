@@ -1,1 +1,1 @@
-include ':app', ':leakcanarytest'
+include ':app', ':leakcanarytest', ':bitmap'

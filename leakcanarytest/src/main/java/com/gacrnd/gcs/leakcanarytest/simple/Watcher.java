@@ -57,7 +57,7 @@ public class Watcher {
         System.out.println("加入到怀疑列表...");
         //在加入怀疑列表之前，做一次清理工作
         removeWeaklyReachableReferences();
-        //根据key从观察列表中去找盛放对象的容器，如果被找到，说明到目前为止key对应的对象还没被是否
+        //根据key从观察列表中去找盛放对象的容器，如果被找到，说明到目前为止key对应的对象还没被gc
         KeyWeakReference retainedRef = watchedReferences.remove(key);
         if (retainedRef != null) {
             //把从观察列表中移除出来的对象加入到怀疑列表
