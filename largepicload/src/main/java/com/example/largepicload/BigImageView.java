@@ -107,7 +107,7 @@ public class BigImageView extends View implements GestureDetector.OnGestureListe
         // 第一种方式优化
 //        mOptions.inSampleSize = calcuteInSampleSize(mImageWidth, mImageHeight, mViewWidth, mViewHeight);
 
-        // 第二种方式优化
+        // 第二种方式优化 mScale:如果屏幕的尺寸小于图片尺寸，采样率再增大
 //        float temp = 1.0f / mScale;
 //        if (temp > 1) {
 //            mOptions.inSampleSize = (int) Math.pow(2, (int) (temp));
